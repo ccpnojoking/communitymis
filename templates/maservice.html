@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<table border="" cellspacing="" cellpadding="">
+			<tr>
+				<th>维修序号</th>
+				<th>维修项目</th>
+				<th>描述内容</th>
+				<th>报修人</th>
+			</tr>
+			{% for i in resultlist %}
+			<tr>
+				<td>{{i.id}}</td>
+				<td>{{i.project}}</td>
+				<td>{{i.describe}}</td>
+				<td>{{i.username}}</td>
+				<td><a href="/maservice/{{i.id}}">删除</a></td>
+			</tr>
+			{% endfor %}
+		</table>
+		<a href="/service">返回</a>
+	</body>
+</html>

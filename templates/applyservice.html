@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="" method="post">
+			<label for="pro">报修项目：</label>
+			<select name="pro">
+				<option value="水管类">水管类</option>
+				<option value="电器类">电器类</option>
+				<option value="燃气类">燃气类</option>
+				<option value="其他">其他</option>
+			</select>
+			<br />
+			<label for="descr">内容描述：</label>
+			<textarea name="descr" rows="5" cols="10" placeholder="描述故障，一百字以内，可不填"></textarea>
+			<br />
+			<label for="building">楼号：</label>
+			<input type="number" name="building" id="building" />
+			<br />
+			<label for="unit">单元：</label>
+			<input type="number" name="unit" id="unit" />
+			<br />
+			<label for="roomnum">房间：</label>
+			<input type="number" name="roomnum" id="roomnum" />
+			<br />
+			<label for="phone">联系方式：</label>
+			<input type="tel" name="phone" id="phone" />
+			<br />
+			<input type="submit" value="提交"/>
+		</form>
+		<a href="/service">返回</a>
+	</body>
+</html>

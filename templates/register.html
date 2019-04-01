@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			{% if resultid %}
+				alert("您输入的账户已被注册！")
+			{% endif %}
+				
+		</script>
+	</head>
+	<body>
+		<form action="" method="post">
+			<label for="username">用户名：</label>
+			<input type="text" name="username" id="username" /><br />
+			<label for="account">账户:</label>
+			<input type="text" name="account" id="account" /><br />	
+			<label for="pwd">密码：</label>
+			<input type="password" name="pwd" id="pwd" /><br />
+			<input type="submit" value="注册" />
+		</form>
+		<br />
+		<a href="/">返回</a>
+	</body>
+</html>
